@@ -3,7 +3,11 @@ Shark Bookkeeping is a professional and convenient mobile bookkeeping software, 
 
 -key features-
 Quick bookkeeping and cloud saving
+
 Use charts to show income and expenses
+
 Add multiple bills quickly, efficiently and simply
+
 Weekly summary, monthly summary, annual summary
+
 Use different books to record different expenses
