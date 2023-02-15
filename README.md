@@ -31,4 +31,21 @@ The <header> element is an HTML tag used to define a header section for a web pa
 
 A DOCTYPE (Document Type Declaration) is a required component of an HTML document and is used to declare the type of document being used, such as HTML5, XHTML, or HTML 4.01. The DOCTYPE declaration should be the first line of an HTML document and should be included in every HTML page.
 
+-------------------
+CSS flexbox is a layout module that allows you to arrange elements in a flexible and responsive manner. It provides an efficient way to distribute space among items in a container, even when their size is unknown or dynamic.
+
+To use flexbox, you need to define a container element and specify the display property as flex. Then, you can use various properties to control the layout and positioning of the child elements within the container.
+
+Here are some of the key properties that you can use with flexbox:
+
+display: flex;: Defines the container element as a flex container.
+flex-direction: Defines the direction of the main axis, which determines the direction in which child elements are laid out. The main axis can be either horizontal or vertical.
+justify-content: Defines how child elements are positioned along the main axis. This property can be used to distribute space between elements or align them to the start or end of the container.
+align-items: Defines how child elements are positioned along the cross axis, which is perpendicular to the main axis. This property can be used to align elements to the top, center, or bottom of the container.
+flex-wrap: Defines whether child elements should be wrapped onto multiple lines if there is not enough space on a single line.
+flex-grow: Defines how much a child element can grow relative to the other elements in the container.
+flex-shrink: Defines how much a child element can shrink relative to the other elements in the container.
+flex-basis: Defines the default size of a child element before any remaining space is distributed.
+Flexbox provides a powerful and flexible way to layout content, and it is widely supported in modern web browsers.
+
 
