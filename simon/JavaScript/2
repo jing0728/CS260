@@ -1,0 +1,54 @@
+class MemoryGame {
+  constructor(numRows, numCols) {
+    this.numRows = numRows;
+    this.numCols = numCols;
+    this.cards = [];
+    this.selectedCards = [];
+    this.matches = [];
+    this.score = 0;
+    this.gameContainer = document.querySelector('.game-container');
+    this.scoreElement = document.querySelector('.score');
+    this.generateCards();
+    this.renderCards();
+  }
+
+  generateCards() {
+    const symbols = ['🍎', '🍊', '🍋', '🍓', '🍉', '🍒', '🥝', '🍇'];
+    const numSymbols = this.numRows * this.numCols / 2;
+    const symbolPairs = symbols.slice(0, numSymbols).concat(symbols.slice(0, numSymbols));
+    const shuffledPairs = symbolPairs.sort(() => Math.random() - 0.5);
+
+    for (let i = 0; i < this.numRows; i++) {
+      const row = [];
+      for (let j = 0; j < this.numCols; j++) {
+        const card = {
+          symbol: shuffledPairs[i * this.numCols + j],
+          row: i,
+          col: j,
+          isMatched: false,
+          isFaceUp: false,
+        };
+        row.push(card);
+      }
+      this.cards.push(row);
+    }
+  }
+
+  renderCards() {
+    const cardElements = [];
+
+    for (let i = 0; i < this.numRows; i++) {
+      for (let j = 0; j < this.numCols; j++) {
+        const card = this.cards[i][j];
+        const cardElement = document.createElement('div');
+        cardElement.classList.add('card');
+        cardElement.dataset.row = i;
+        cardElement.dataset.col = j;
+        cardElement.innerHTML = '<div class="back"></div><div class="front">' + card.symbol + '</div>';
+        cardElements.push(cardElement);
+      }
+    }
+
+    cardElements.forEach(cardElement => this.gameContainer.appendChild(cardElement));
+  }
+}
