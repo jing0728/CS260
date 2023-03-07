@@ -1,0 +1,5 @@
+cardElement.addEventListener('click', () => {
+  const row = parseInt(cardElement.dataset.row);
+  const col = parseInt(cardElement.dataset.col);
+  this.selectCard(row, col);
+});
