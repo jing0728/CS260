@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap v4.4.1 (https://getbootstrap.com/)-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title> doesn't make sense of article generator</title>
+</head>
+
+<body onload="onload()">
+    <h3> doesn't make sense of article generator</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-xs-12">
+                <form action="javascript:void(0);" autocomplete="off">
+                    <div class="form-group">
+                        <lable for="subject">main：</lable>
+                        <input type="text" id="subject" class="form-control" placeholder="input " required />
+                    </div>
+                    <div class="form-group">
+                        <lable for="event">event1：</lable>
+                        <input type="text" id="event" class="form-control" placeholder="input" required />
+                    </div>
+                    <div class="form-group">
+                        <lable for="event2">event2：</lable>
+                        <input type="text" id="event2" class="form-control" placeholder="input" required />
+                    </div>
+                    <input type="submit" value="submit" class="btn btn-primary" onclick="generate()" />
+                    <input type="button" value="Convert to speech" class="btn btn-primary" id="aud" onclick="audios()" />
+                    <input type="button" value="Turn off" class="btn btn-primary"  onclick="del()" />
+
+                </form>
+            </div>
+            <div class="col-sm-7 col-xs-12">
+                <textarea id="result" onchange="auto_grow(this)" oninput="auto_grow(this)"
+                    placeholder="　　output;&#010;　　output&#013;&#010;　　"></textarea>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <audio src="" id="myaudio" controls="controls" loop="false" hidden="true"></audio>
+        <audio src="music/bgm.mp3" id="bgm" controls="controls" loop="false" hidden="true"></audio>
+        <P>技术支持 ：<a href="https://github.com/jing0728/CS260/tree/main/Start%20up%20deliverable" title="">Jingyuan Wang </a> </P>
+    </div>
+
+</body>
+
+</html>
