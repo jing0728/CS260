@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+*{margin:0;padding:0;box-sizing:border-box;
+}
+html body{font-size:12px;font-family:"Microsoft YaHei";color:#555;background-color:#fceeee;
+}
+a{color:#555;text-decoration:none;
+}
+
+.container{width:1000px;margin:0 auto;overflow:hidden;
+}
+
+.wrapper{float:left;width:1000px;background-color:#fff;
+}
+
+.header{float:left;width:1000px;height:86px;background-color:#fdd1d2;
+}
+.header a{font-weight:bold;color:#fff;
+}
+.header a.logo{float:left;margin:20px 0 0 24px;font-size:30px;
+}
+.header a.login{float:right;margin:38px 25px 0 0;font-size:15px;
+}
+.header a.register{float:right;margin:38px 25px 0 0;font-size:15px;
+}
+
+.nav{float:left;width:1000px;height:40px;line-height:40px;font-size:14px;font-weight:bold;background-color:#fca1aa;
+}
+.nav a{margin:0 43px 0 25px;color:#fff;
+}
+.nav a:nth-last-child(1){margin-right:0;
+}
+
+.focus{float:left;position:relative;width:1000px;
+}
+.focus_image{float:left;width:1000px;height:450px;list-style:none;
+}
+.focus_image li{width:1000px;height:450px;display:none;
+}
+.focus_image li.current{display:block;
+}
+.focus_image li img{float:left;width:1000px;height:450px;
+}
+.focus_button{position:absolute;bottom:30px;right:360px;padding:20px 0 0 30px;width:180px;height:30px;list-style:none;
+}
+.focus_button li{float:left;width:20px;height:6px;margin-left:10px;background-color:#fff;cursor:pointer;
+}
+.focus_button li.on{background-color:#fca1aa;
+}
+
+.line{float:left;width:950px;margin:45px 0 0 25px;
+}
+.line img{float:left;width:315px;height:220px;margin-top:3px;
+}
+.line h2{float:right;width:615px;height:25px;line-height:25px;font-size:16px;
+}
+.line p{float:right;width:615px;line-height:25px;margin-top:5px;
+}
+
+.item{float:left;width:950px;margin:40px 0 10px 25px;
+}
+.item img{float:right;width:315px;height:220px;margin-top:3px;
+}
+.item h2{float:left;width:615px;height:25px;line-height:25px;font-size:16px;
+}
+.item p{float:left;width:615px;line-height:25px;margin-top:5px;
+}
+
+.list{float:left;width:218px;margin:35px 0 20px 25px;
+}
+.list h2{float:right;width:218px;height:25px;line-height:25px;font-size:16px;
+}
+.list img{float:left;width:218px;height:150px;margin-top:10px;
+}
+.list p{float:right;width:218px;line-height:25px;margin-top:5px;
+}
+
+.word{float:left;width:1000px;padding-bottom:10px;
+}
+.word h2{float:left;width:900px;height:30px;line-height:30px;margin:30px 0 10px 50px;font-size:18px;text-align:center;
+}
+.word img{float:left;width:900px;margin:10px 0 10px 50px;
+}
+.word p{float:left;width:900px;line-height:27px;margin:5px 0 0 50px;text-indent:25px;
+}
+
+.into{float:left;width:1000px;min-height:500px;padding:60px 0;
+}
+.into p{float:left;width:1000px;height:55px;margin-top:10px;
+}
+.into p span{float:left;width:330px;height:60px;line-height:60px;font-size:14px;text-align:right;
+}
+.into p input{float:left;width:330px;height:35px;margin:15px 0 0 10px;
+}
+.into p b{float:left;width:130px;height:60px;line-height:60px;margin-left:20px;font-size:14px;font-weight:normal;
+}
+.into p input.submit{letter-spacing:3px;color:#fff;background-color:#fca1aa;border:0;
+}
+
+.footer{float:left;width:1000px;height:80px;line-height:80px;margin-top:20px;text-align:center;color:#fff;background-color:#fca1aa;
+}
